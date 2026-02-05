@@ -18,27 +18,31 @@
 
 ### web & react apps
 
-- 💼 [**ivy-wallet-web**](https://github.com/pratikkabade/ivy-wallet-web) — web version of a personal finance app built with react and typescript (archived).
+- 💼 [**ivy-wallet-web**](https://ivy-wallet-web.vercel.app/) — web version of a personal finance app built with react and typescript (archived).
+- 📋 [**project-pilot**](https://project-pilot-sigma.vercel.app/) — collaborative project management system aimed at simplifying task coordination and user workflows (archived).
+- 🚀 [**mvp**](https://github.com/pratikkabade/mvp) — prm stack (python, react, mongodb) boilerplate for rapidly building full-stack applications with authentication and modular architecture (archived).
+- ⏱️ [**5217timer**](https://github.com/pratikkabade/5217timer) — implementation of the 52-17 productivity technique (archived).
 - 💬 [**reactchat**](https://github.com/pratikkabade/reactchat) — firebase-powered real-time chat app (archived).
-- 💰 [**cryptospy**](https://github.com/pratikkabade/cryptospy) — crypto price tracker using axios and public apis (archived).
-- 📚 [**my-lists**](https://github.com/pratikkabade/my-lists) — bookmark and list aggregation ui (archived).
-- 🔎 [**githubusersearch**](https://github.com/pratikkabade/githubusersearch) — simple github profile search interface (archived).
-- 🤖 [**aichat**](https://github.com/pratikkabade/aichat) — chatgpt api-based experiment (archived).
 - ⚖️ [**proscons**](https://github.com/pratikkabade/proscons) — decision helper react app (archived).
 
 ---
 
-### utility / productivity / experiments
+### 🛠️ developer tools & browser utilities
 
-- ⏱️ [**5217timer**](https://github.com/pratikkabade/5217timer) — implementation of the 52-17 productivity technique (archived).
+- 🔐 [**data-anonymization-tool**](https://github.com/pratikkabade/data-anonymization-tool) — python-based tool for anonymizing sensitive datasets to comply with data transfer and privacy constraints (archived).
 - 📈 [**lstm-timeseries-predictor**](https://github.com/pratikkabade/lstm-timeseries-predictor) — python-based lstm forecasting for system metrics (archived).
 - 🔄 [**synthetic-data-generator**](https://github.com/pratikkabade/synthetic-data-generator) — python toolkit for generating synthetic resource and feedback datasets (archived).
+- 🌦️ [**weather-data-handler**](https://github.com/pratikkabade/weather-data-handler) — python-based utility for efficient ingestion, processing, and structuring of weather datasets (archived).
+- 🖱️ [**web-action-recorder-bookmarklet**](https://github.com/pratikkabade/web-action-recorder-bookmarklet) — browser bookmarklet that records on-page interactions and generates equivalent python selenium automation scripts (archived).
+- 📸 [**screenshot-bookmarklet**](https://github.com/pratikkabade/screenshot-bookmarklet) — lightweight bookmarklet for capturing and downloading webpage screenshots as png files (archived).
 
 ---
 
-### backend / non-web
+### c-sharp apps
 
 - 🏦 [**edgebank**](https://github.com/pratikkabade/edgebank) — c# mvc + web api banking project (archived).
+- 🩺 [**hopeclinic**](https://github.com/pratikkabade/hopeclinic) — doctor appointment booking and medication ordering system built with c#, mvc frontend, and webapi backend secured using jwt authentication (archived).
+- 📊 [**auditmanagement**]((https://github.com/pratikkabade/auditmanagement)) — audit workflow and compliance tracking system developed using c#, mvc frontend, and webapi backend with jwt-based authentication (archived).
 
 ---
 
@@ -57,8 +61,8 @@
 
 ## connect
 
-[![linkedin](https://img.shields.io/badge/-pratik_kabade-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pratikkabade)
-[![github](https://img.shields.io/badge/-follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/pratikkabade)
+[![linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pratikkabade)
+[![github](https://img.shields.io/badge/-github-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/pratikkabade)
 
 ---
 
