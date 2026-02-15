@@ -1,54 +1,36 @@
 import { useEffect, useRef, useState } from "react";
 
-export function FadeInSection(props: any) {
-    const [isVisible, setVisible] = useState(true);
-    const domRef = useRef<HTMLDivElement>(null); // Add type annotation to useRef
+function useIntersectionObserver() {
+    const [isVisible, setVisible] = useState(false);
+    const domRef = useRef<HTMLDivElement>(null);
+
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => setVisible(entry.isIntersecting));
         });
-        if (domRef.current) { // Check if domRef.current is not null
-            observer.observe(domRef.current);
-        }
-        return () => {
-            if (domRef.current) { // Check if domRef.current is not null
-                observer.unobserve(domRef.current);
-            }
-        };
+
+        const el = domRef.current;
+        if (el) observer.observe(el);
+        return () => { if (el) observer.unobserve(el); };
     }, []);
+
+    return { isVisible, domRef };
+}
+
+export function FadeInSection({ children }: { children: React.ReactNode }) {
+    const { isVisible, domRef } = useIntersectionObserver();
     return (
-        <div
-            className={`fade-in-section w-fit ${isVisible ? 'is-visible' : ''}`}
-            ref={domRef}
-        >
-            {props.children}
+        <div className={`fade-in-section w-fit ${isVisible ? "is-visible" : ""}`} ref={domRef}>
+            {children}
         </div>
     );
 }
 
-
-export function MoveDownSection(props: any) {
-    const [isVisible, setVisible] = useState(true);
-    const domRef = useRef<HTMLDivElement>(null); // Add type annotation to useRef
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setVisible(entry.isIntersecting));
-        });
-        if (domRef.current) { // Check if domRef.current is not null
-            observer.observe(domRef.current);
-        }
-        return () => {
-            if (domRef.current) { // Check if domRef.current is not null
-                observer.unobserve(domRef.current);
-            }
-        };
-    }, []);
+export function MoveDownSection({ children }: { children: React.ReactNode }) {
+    const { isVisible, domRef } = useIntersectionObserver();
     return (
-        <div
-            className={`move-down-section h-fit w-fit ${isVisible ? 'is-visible' : ''}`}
-            ref={domRef}
-        >
-            {props.children}
+        <div className={`move-down-section h-fit w-fit ${isVisible ? "is-visible" : ""}`} ref={domRef}>
+            {children}
         </div>
     );
 }
