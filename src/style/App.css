@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    scroll-behavior: smooth;
+    transition: 0.15s !important;
+    -webkit-transition: height 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+
+}
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -3rem;
+    font-size: 1.25rem;
+
+    opacity: .8;
+    padding: .1rem .7rem .1rem .7rem;
+    border-radius: 1rem;
+    transition: .4s;
+}
+
+.scrollup:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transition: 0.1s;
+    transform: scale(1.05);
+}
+
+.show-scroll {
+    bottom: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .scrollup::after {
+        content: " Top";
+    }
+}
+
+.custom-img {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1100/1*5nV87028G6Z7RSVtOwlViQ.png");
+}
+
+.fullpage {
+    display: flex;
+    overflow: auto;
+    flex: none;
+
+    flex-flow: column nowrap;
+
+    scroll-snap-type: y mandatory;
+}
+
+.fullpage>div {
+    scroll-snap-align: center;
+    flex: none;
+}
+
+.caraosel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateX(-50px);
+    visibility: hidden;
+    transition: opacity 1s ease-out, transform 1s ease-out !important;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.move-down-section {
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+    transition: opacity 1s ease-out, transform 1s ease-out !important;
+    will-change: opacity, visibility;
+}
+
+.move-down-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.caraosel::-webkit-scrollbar {
+    height: 25px;
+}
+
+/* Track */
+.caraosel::-webkit-scrollbar-track {
+    --tw-bg-opacity: 0;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+/* Handle */
+.caraosel::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to right, #33a18b, #2d927e);
+}
+
+/* Handle on hover */
+.caraosel::-webkit-scrollbar-thumb:hover {
+    --tw-bg-opacity: 1;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(to right, #3c9886, #348f7d);
+}
+
+.curved-gradient-bottom {
+    background: linear-gradient(to bottom, #acb6e5, #86fde8);
+    /* Adjust the colors as needed */
+    border-radius: 0 0 50% 50%/0 0 10vw 10vw;
+    /* Adjust the border-radius values for the desired curve */
+}
+
+.inclined {
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+    border-radius: 0 0 10vw 10vw / 2vw 2vw 0 0;
+    transform: rotate(-1deg);
+    /* transform-origin: bottom center; */
+    padding: 1rem;
+}
+
+.uninclined {
+    transform: rotate(1deg);
+}
+
+.curved-gradient-bottom {
+    background: linear-gradient(to bottom, #ffeeca, #dbffe8);
+    border-radius: 0 0 10% 10%/0 0 10vw 10vw;
+}
+
+.curved-gradient-footer {
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.1), rgba(0, 0, 255, 0.1));
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-gradient-rounded {
+    /* Border */
+    border: 4px solid transparent;
+    background:
+        linear-gradient(to right, white, white),
+        linear-gradient(to right, red, blue);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+
+.parallax {
+    /* The image used */
+    background: linear-gradient(to top, #00f6c5, #eeff36);
+    border-radius: 10% 10% 0 0/10vw 10vw 0 0;
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* keep content fixed */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    animation: gradient 8s ease infinite;
+}
+
+/* markdown.css */
+
+.md h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.md h2 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.md h3 {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+}
+
+.md p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.md li {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.md ul {
+    padding-left: 1.25rem;
+    list-style: none;
+}
+
+.md ul li::before {
+    content: "—";
+    margin-right: 0.5rem;
+    opacity: 0.4;
+}
+
+.md ul ul {
+    padding-left: 1.5rem;
+}
+
+.md ul ul li::before {
+    content: "·";
+}
+
+.md a {
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.md a:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
+.md blockquote {
+    margin: 1rem 0;
+    padding: 0.6rem 1rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.4);
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.md hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 1.5rem 0;
+}
+
+.md details {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.md details summary {
+    cursor: pointer;
+    font-weight: 500;
+    opacity: 0.7;
+    letter-spacing: 0.03em;
+    list-style: none;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.md details summary:hover {
+    opacity: 1;
+}
+
+.md details[open] summary {
+    opacity: 1;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.md img {
+    height: 1.4em;
+    vertical-align: middle;
+    display: inline;
+    margin: 0 0.1rem;
+}
