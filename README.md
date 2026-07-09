@@ -9,14 +9,14 @@
 ## current projects
 
 - 📊 [**finora**](https://github.com/pratikkabade/finora) — a modern typescript/react personal finance and tracking app, evolving from earlier experiments in expense tracking.
+- [**mac remote**](https://github.com/pratikkabade/mac-remote) - a web & python based tool to control your mac seamlessly from your iphone
+- [**agent-with-rag**](https://github.com/pratikkabade/agent-with-rag) - proof of concept for itsm chatbot utilizing api & mcp server
 - 🧰 [**api-console**](https://github.com/pratikkabade/api-console) — a lightweight developer utility for crafting, testing, and managing http api requests.
 - 🌐 [**snapshot**](https://github.com/pratikkabade/snapshot) — a daily insight dashboard built using public and freemium data sources.
 
 ---
 
-## 🕰️ legacy work (categorized)
-
-### web & react apps
+## 🌐 legacy web & react apps
 
 - 💼 [**ivy-wallet-web**](https://ivy-wallet-web.vercel.app/) — web version of a personal finance app built with react and typescript (archived).
 - 📋 [**project-pilot**](https://project-pilot-sigma.vercel.app/) — collaborative project management system aimed at simplifying task coordination and user workflows (archived).
@@ -27,7 +27,7 @@
 
 ---
 
-### 🛠️ developer tools & browser utilities
+## 🛠️ legacy developer tools & browser utilities
 
 - 🔐 [**data-anonymization-tool**](https://github.com/pratikkabade/data-anonymization-tool) — python-based tool for anonymizing sensitive datasets to comply with data transfer and privacy constraints (archived).
 - 📈 [**lstm-timeseries-predictor**](https://github.com/pratikkabade/lstm-timeseries-predictor) — python-based lstm forecasting for system metrics (archived).
@@ -38,11 +38,11 @@
 
 ---
 
-### c-sharp apps
+### legacy c-sharp apps
 
 - 🏦 [**edgebank**](https://github.com/pratikkabade/edgebank) — c# mvc + web api banking project (archived).
 - 🩺 [**hopeclinic**](https://github.com/pratikkabade/hopeclinic) — doctor appointment booking and medication ordering system built with c#, mvc frontend, and webapi backend secured using jwt authentication (archived).
-- 📊 [**auditmanagement**]((https://github.com/pratikkabade/auditmanagement)) — audit workflow and compliance tracking system developed using c#, mvc frontend, and webapi backend with jwt-based authentication (archived).
+- 📊 [**auditmanagement**](https://github.com/pratikkabade/auditmanagement) — audit workflow and compliance tracking system developed using c#, mvc frontend, and webapi backend with jwt-based authentication (archived).
 
 ---
 
@@ -56,6 +56,7 @@
 - **optimizing systems for efficiency** — improving ranking logic, filtering mechanisms, and data relevance in real-world platforms  
 - **thinking like a product engineer** — focusing on solutions that are practical, scalable, and worth paying for  
 - **preparing for long-term impact** — continuously sharpening system design, frontend architecture, and innovation skills  
+- giving up on **managing couple of github organizations** — [DevelopmentGuide](https://github.com/DevelopmentGuide) & [SwiftOVATE](https://github.com/SwiftOVATE)
 
 ---
 
@@ -72,12 +73,10 @@
 
 > i build tools to solve my own problems first — then opensource and refine them
 
-> currently exploring how ai is reshaping software development
-
 <details>
 <summary>random facts abt me</summary>
 
-- formerly known as **memelord** 👑 — archives still live [on **x**](https://x.com/memelord_archv)
+- formerly known as **memelord** 👑 — archives still live [on **twitter**](https://x.com/memelord_archv)
 - once a full-time **travel enthusiast** 
     - 🏍️, 🚘, 🚌, 🚢, 🚍, 🚊, 🚝, ✈️
     - if it moves, i've probably taken it
